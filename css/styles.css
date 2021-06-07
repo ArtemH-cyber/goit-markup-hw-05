@@ -143,6 +143,7 @@ body {
   height: 4px;
   background: var(--accent-color);
   border-radius: 2px;
+  bottom: -1px;
 }
 
 /* шрифт навигация сылки контактов */
@@ -169,7 +170,6 @@ body {
   height: 12px;
   fill: currentColor;
   margin-right: 10px;
-  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .envelope-icon:hover,
@@ -182,7 +182,6 @@ body {
   height: 16px;
   fill: currentColor;
   margin-right: 10px;
-  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .smartphone-icon:hover,
@@ -274,7 +273,9 @@ body {
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/hero/bg.jpg");
-  background-size: 1600px;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
 }
 /* =============END HERO========= */
 
@@ -476,7 +477,7 @@ body {
   margin-top: 30px;
 }
 
-.client-list-content {
+.client-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -489,8 +490,8 @@ body {
     var(--transition-timing-function);
 }
 
-.client-list-content:hover,
-.client-list-content:focus {
+.client-list-link:hover,
+.client-list-link:focus {
   border: 1px solid var(--accent-color);
 }
 
@@ -502,14 +503,6 @@ body {
 .client-list-link:hover .client-list-icon,
 .client-list-link:focus .client-list-icon {
   fill: var(--accent-color);
-}
-
-.client-list-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 92px;
 }
 
 .client-one {
